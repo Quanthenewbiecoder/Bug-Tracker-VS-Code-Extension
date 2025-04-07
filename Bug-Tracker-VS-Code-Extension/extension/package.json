@@ -1,0 +1,21 @@
+﻿{
+  "name": "bug-tracker",
+  "displayName": "Bug Tracker",
+  "main": "./out/extension.js",
+  "activationEvents": ["onCommand:bugtracker.openBugs"],
+  "contributes": {
+    "commands": [
+      {
+        "command": "bugtracker.openBugs",
+        "title": "Open Bug Tracker"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vscode": "^1.1.38"
+  }
+}
